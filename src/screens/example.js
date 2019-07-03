@@ -10,10 +10,15 @@ class Example extends React.Component {
     console.log({ result });
   };
 
+  onNavigate = () => {
+    this.props.navigation.navigate("StaticCounter");
+  };
+
   render() {
     return (
       <View>
         <Button title=" test button" onPress={this.onPress} />
+        <Button title=" navigasi " onPress={this.onNavigate} />
       </View>
     );
   }
