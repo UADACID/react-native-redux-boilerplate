@@ -6,10 +6,18 @@ import client from "../utils/service";
 
 class Example extends React.Component {
   onPress = async () => {
-    const result = await client.get("todos");
-    this.props.dispatch({ type: 'addTodo' })
-    console.log({ result });
+    this.props.dispatch(this.action())
   };
+
+  action = () => async (dispatch, getState) => {
+    console.log({ dispatch, getState: getState() })
+    const result = await client.get("todos");
+    console.log(result)
+    dispatch({ 'type': 'addTodo', payload: result.data })
+    setTimeout(() => {
+      dispatch({ 'type': 'getTodo', payload: result.data })
+    }, 4000)
+  }
 
   onNavigate = () => {
     this.props.navigation.navigate("StaticCounter");
