@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Fragment } from "react";
 import { View, Button } from "react-native";
 import { connect } from "react-redux";
 
@@ -25,10 +25,10 @@ class Example extends React.Component {
 
   render() {
     return (
-      <View>
+      <Fragment>
         <Button title=" test button" onPress={this.onPress} />
         <Button title=" navigasi " onPress={this.onNavigate} />
-      </View>
+      </Fragment>
     );
   }
 }
