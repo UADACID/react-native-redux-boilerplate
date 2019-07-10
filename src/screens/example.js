@@ -7,6 +7,7 @@ import client from "../utils/service";
 class Example extends React.Component {
   onPress = async () => {
     const result = await client.get("todos");
+    this.props.dispatch({ type: 'addTodo' })
     console.log({ result });
   };
 

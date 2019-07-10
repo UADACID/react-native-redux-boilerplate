@@ -1,6 +1,7 @@
-import { createStore } from "redux";
+import { applyMiddleware, createStore } from "redux";
+import logger from 'redux-logger'
 
 import combinerReducers from "./reducers";
 
-const store = createStore(combinerReducers);
+const store = createStore(combinerReducers, applyMiddleware(logger));
 export default store;
