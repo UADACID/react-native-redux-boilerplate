@@ -1,20 +1,5 @@
 jobs:
 
-- job: CodeQuality
-  pool:
-    vmImage: 'macOS 10.13'
-  steps:
-  - task: NodeTool@0
-    inputs:
-      versionSpec: '8.x'
-    displayName: 'Install Node.js'
-
-  - script: npm ci
-    displayName: 'npm ci'
-
-  - script: npm run test
-    displayName: 'Running unit tests'
-
 - job: Android
   pool:
     vmImage: 'macOS 10.13'
@@ -36,34 +21,3 @@ jobs:
       publishJUnitResults: false
       tasks: 'assembleDebug'
 
-- job: iOS
-  pool:
-    vmImage: 'macOS 10.13'
-  steps:
-  - task: NodeTool@0
-    inputs:
-      versionSpec: '8.x'
-    displayName: 'Install Node.js'
-
-  - script: npm ci
-    displayName: 'npm ci'
-
-  - task: CocoaPods@0
-    inputs:
-      workingDirectory: 'ios/'
-      forceRepoUpdate: false
-
-  - task: Xcode@5
-    displayName: 'Building iOS app (debug)'
-    inputs:
-      actions: 'clean build archive'
-      sdk: 'iphoneos'
-      configuration: 'Debug'
-      xcWorkspacePath: 'ios/RNAzurePipelines.xcworkspace'
-      scheme: 'RNAzurePipelines'
-      xcodeVersion: '10'
-      signingOption: 'nosign'
-      useXcpretty: false
-      exportPath: '$(agent.buildDirectory)/output/$(sdk)/$(configuration)'
-      packageApp: false
-      args: '-UseModernBuildSystem=NO -archivePath $(agent.buildDirectory)/RNAzurePipelines'
