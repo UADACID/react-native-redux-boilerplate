@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { View, Button } from "react-native";
+import { View, Button, Text } from "react-native";
 import { connect } from "react-redux";
 
 import client from "../utils/service";
@@ -24,10 +24,12 @@ class Example extends React.Component {
   };
 
   render() {
+    const isHermes = () => global.HermesInternal != null;
     return (
       <Fragment>
         <Button title=" test button" onPress={this.onPress} />
         <Button title=" navigasi " onPress={this.onNavigate} />
+        {isHermes ? <Text>hermes on</Text> : <Text>hermes off</Text>}
       </Fragment>
     );
   }
