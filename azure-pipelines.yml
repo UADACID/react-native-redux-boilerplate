@@ -12,8 +12,14 @@ jobs:
   - script: yarn install
     displayName: 'yarn install'
 
+  - script: yarn add -d jetifier
+    displayName: 'jetifier install'
+
+  - script: npx jetify
+    displayName: 'run jetify'
+
   - task: Gradle@2
-    displayName: 'Building Android app (debug)'
+    displayName: 'Building Android app (release)'
     inputs:
       workingDirectory: 'android/'
       gradleWrapperFile: 'android/gradlew'
