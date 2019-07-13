@@ -28,15 +28,13 @@ jobs:
       tasks: 'assembleRelease'
       
   - task: CopyFiles@2
-    displayName: 'Copying .apk files...'
     inputs:
       contents: '**/*.apk'
       targetFolder: '$(build.artifactStagingDirectory)'
-  
+
   - task: PublishBuildArtifacts@1
-    displayName: 'Archiving .apk'
     inputs:
       pathToPublish: '$(build.artifactStagingDirectory)/app/build/outputs/'
-      artifactName: 'apk'
+      artifactName: 'apk-files'
       artifactType: 'container'
 
