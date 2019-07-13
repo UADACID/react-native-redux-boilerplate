@@ -50,7 +50,7 @@ jobs:
       releaseNotesOption: 'input'
       releaseNotesInput: 'asdasdsadasd'
       destinationType: 'groups'
-      distributionGroupId: '526b747e22d661dddd429d2ba60452613360322f'
+      distributionGroupId: '2c638fde-aaa1-4195-b972-fadf87e8292b'
 
   
   
