@@ -16,7 +16,7 @@ jobs:
     displayName: 'jetifier install'
 
   - script: npx jetify
-    displayName: 'run jetify'
+    displayName: 'npx jetify'
 
   - task: Gradle@2
     displayName: 'Building Android app (release)'
