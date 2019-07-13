@@ -37,7 +37,7 @@ jobs:
   - task: PublishBuildArtifacts@1
     displayName: 'Archiving .apk...'
     inputs:
-      pathToPublish: '$(build.artifactStagingDirectory)/android//'
+      pathToPublish: '$(build.artifactStagingDirectory)/android/app/build/outputs/apk/'
       artifactName: 'apk'
       artifactType: 'container'
 
@@ -45,7 +45,7 @@ jobs:
     inputs:
       serverEndpoint: 'testing app center'
       appSlug: 'uadacid/tama'
-      appFile: 'app/build/outputs/apk/release/app-release.apk'
+      appFile: '$(build.artifactStagingDirectory)/android/app/build/outputs/apk/release/app-release.apk'
       symbolsOption: 'Android'
       releaseNotesOption: 'input'
       releaseNotesInput: 'asdasdsadasd'
