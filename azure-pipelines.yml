@@ -37,9 +37,19 @@ jobs:
   - task: PublishBuildArtifacts@1
     displayName: 'Archiving .apk...'
     inputs:
-      pathToPublish: '$(build.artifactStagingDirectory)/android/app/build/outputs/apk/'
+      pathToPublish: '$(build.artifactStagingDirectory)/android//'
       artifactName: 'apk'
       artifactType: 'container'
 
+  - task: AppCenterDistribute@3
+    inputs:
+      serverEndpoint: 'testing app center'
+      appSlug: 'uadacid/tama'
+      appFile: 'app/build/outputs/apk/release/app-release.apk'
+      symbolsOption: 'Android'
+      releaseNotesOption: 'file'
+      releaseNotesFile: 'loremipsum dolor sit amet'
+      destinationType: 'groups'
+      distributionGroupId: '526b747e22d661dddd429d2ba60452613360322f'
 
   
