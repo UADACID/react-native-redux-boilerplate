@@ -43,15 +43,14 @@ jobs:
 
   - task: AppCenterDistribute@3
     inputs:
-      serverEndpoint: 'testing app center'
+      serverEndpoint: 'app-center'
       appSlug: 'pratamasetya99-gmail.com/rn_boilerplate'
       appFile: '$(build.artifactStagingDirectory)/android/app/build/outputs/apk/release/app-release.apk'
       symbolsOption: 'Android'
       releaseNotesOption: 'input'
-      releaseNotesInput: 'asdasdsadasd'
+      releaseNotesInput: 'lorem ipsum'
       destinationType: 'groups'
       distributionGroupId: '2c638fde-aaa1-4195-b972-fadf87e8292b'
-
   
 
   
