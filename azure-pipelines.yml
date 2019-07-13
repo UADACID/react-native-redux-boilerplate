@@ -12,7 +12,7 @@ jobs:
   - script: yarn install
     displayName: 'yarn install'
 
-  - script: yarn add -d jetifier
+  - script: yarn add jetifier
     displayName: 'jetifier install'
 
   - script: npx jetify
