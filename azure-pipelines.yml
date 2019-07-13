@@ -47,9 +47,10 @@ jobs:
       appSlug: 'uadacid/tama'
       appFile: 'app/build/outputs/apk/release/app-release.apk'
       symbolsOption: 'Android'
-      releaseNotesOption: 'file'
-      releaseNotesFile: 'loremipsum dolor sit amet'
+      releaseNotesOption: 'input'
+      releaseNotesInput: 'asdasdsadasd'
       destinationType: 'groups'
       distributionGroupId: '526b747e22d661dddd429d2ba60452613360322f'
 
+  
   
