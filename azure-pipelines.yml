@@ -9,8 +9,8 @@ jobs:
       versionSpec: '8.x'
     displayName: 'Install Node.js'
 
-  - script: npm ci
-    displayName: 'npm ci'
+  - script: yarn install
+    displayName: 'yarn install'
 
   - task: Gradle@2
     displayName: 'Building Android app (debug)'
@@ -19,5 +19,5 @@ jobs:
       gradleWrapperFile: 'android/gradlew'
       gradleOptions: '-Xmx3072m'
       publishJUnitResults: false
-      tasks: 'assembleDebug'
+      tasks: 'assembleRelease'
 
