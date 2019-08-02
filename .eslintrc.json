@@ -1,0 +1,20 @@
+{
+  "root": true,
+  "extends": "@react-native-community",
+  "rules": {
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "none"
+      }
+    ]
+  }
+}

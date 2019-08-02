@@ -6,21 +6,16 @@
  * @flow
  */
 
-import React, { Component } from "react";
-import { Text } from "react-native";
+import React from "react";
 import { Provider } from "react-redux";
 
-import Navigation from "./src/navigations";
+import RootNavigation from "./src/navigations/root";
+import store from "./src/redux/store";
 
-import store from "./src/store";
+const App = () => (
+  <Provider store={store}>
+    <RootNavigation />
+  </Provider>
+);
 
-// Render the app container component with the provider around it
-export default class App extends React.Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <Navigation />
-      </Provider>
-    );
-  }
-}
+export default App;

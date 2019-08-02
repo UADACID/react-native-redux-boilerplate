@@ -11,79 +11,81 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - React (0.60.0):
-    - React-Core (= 0.60.0)
-    - React-DevSupport (= 0.60.0)
-    - React-RCTActionSheet (= 0.60.0)
-    - React-RCTAnimation (= 0.60.0)
-    - React-RCTBlob (= 0.60.0)
-    - React-RCTImage (= 0.60.0)
-    - React-RCTLinking (= 0.60.0)
-    - React-RCTNetwork (= 0.60.0)
-    - React-RCTSettings (= 0.60.0)
-    - React-RCTText (= 0.60.0)
-    - React-RCTVibration (= 0.60.0)
-    - React-RCTWebSocket (= 0.60.0)
-  - React-Core (0.60.0):
+  - React (0.60.4):
+    - React-Core (= 0.60.4)
+    - React-DevSupport (= 0.60.4)
+    - React-RCTActionSheet (= 0.60.4)
+    - React-RCTAnimation (= 0.60.4)
+    - React-RCTBlob (= 0.60.4)
+    - React-RCTImage (= 0.60.4)
+    - React-RCTLinking (= 0.60.4)
+    - React-RCTNetwork (= 0.60.4)
+    - React-RCTSettings (= 0.60.4)
+    - React-RCTText (= 0.60.4)
+    - React-RCTVibration (= 0.60.4)
+    - React-RCTWebSocket (= 0.60.4)
+  - React-Core (0.60.4):
     - Folly (= 2018.10.22.00)
-    - React-cxxreact (= 0.60.0)
-    - React-jsiexecutor (= 0.60.0)
-    - yoga (= 0.60.0.React)
-  - React-cxxreact (0.60.0):
+    - React-cxxreact (= 0.60.4)
+    - React-jsiexecutor (= 0.60.4)
+    - yoga (= 0.60.4.React)
+  - React-cxxreact (0.60.4):
     - boost-for-react-native (= 1.63.0)
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
-    - React-jsinspector (= 0.60.0)
-  - React-DevSupport (0.60.0):
-    - React-Core (= 0.60.0)
-    - React-RCTWebSocket (= 0.60.0)
-  - React-fishhook (0.60.0)
-  - React-jsi (0.60.0):
+    - React-jsinspector (= 0.60.4)
+  - React-DevSupport (0.60.4):
+    - React-Core (= 0.60.4)
+    - React-RCTWebSocket (= 0.60.4)
+  - React-fishhook (0.60.4)
+  - React-jsi (0.60.4):
     - boost-for-react-native (= 1.63.0)
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
-    - React-jsi/Default (= 0.60.0)
-  - React-jsi/Default (0.60.0):
+    - React-jsi/Default (= 0.60.4)
+  - React-jsi/Default (0.60.4):
     - boost-for-react-native (= 1.63.0)
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
-  - React-jsiexecutor (0.60.0):
+  - React-jsiexecutor (0.60.4):
     - DoubleConversion
     - Folly (= 2018.10.22.00)
     - glog
-    - React-cxxreact (= 0.60.0)
-    - React-jsi (= 0.60.0)
-  - React-jsinspector (0.60.0)
-  - React-RCTActionSheet (0.60.0):
-    - React-Core (= 0.60.0)
-  - React-RCTAnimation (0.60.0):
-    - React-Core (= 0.60.0)
-  - React-RCTBlob (0.60.0):
-    - React-Core (= 0.60.0)
-    - React-RCTNetwork (= 0.60.0)
-    - React-RCTWebSocket (= 0.60.0)
-  - React-RCTImage (0.60.0):
-    - React-Core (= 0.60.0)
-    - React-RCTNetwork (= 0.60.0)
-  - React-RCTLinking (0.60.0):
-    - React-Core (= 0.60.0)
-  - React-RCTNetwork (0.60.0):
-    - React-Core (= 0.60.0)
-  - React-RCTSettings (0.60.0):
-    - React-Core (= 0.60.0)
-  - React-RCTText (0.60.0):
-    - React-Core (= 0.60.0)
-  - React-RCTVibration (0.60.0):
-    - React-Core (= 0.60.0)
-  - React-RCTWebSocket (0.60.0):
-    - React-Core (= 0.60.0)
-    - React-fishhook (= 0.60.0)
+    - React-cxxreact (= 0.60.4)
+    - React-jsi (= 0.60.4)
+  - React-jsinspector (0.60.4)
+  - react-native-maps (0.25.0):
+    - React
+  - React-RCTActionSheet (0.60.4):
+    - React-Core (= 0.60.4)
+  - React-RCTAnimation (0.60.4):
+    - React-Core (= 0.60.4)
+  - React-RCTBlob (0.60.4):
+    - React-Core (= 0.60.4)
+    - React-RCTNetwork (= 0.60.4)
+    - React-RCTWebSocket (= 0.60.4)
+  - React-RCTImage (0.60.4):
+    - React-Core (= 0.60.4)
+    - React-RCTNetwork (= 0.60.4)
+  - React-RCTLinking (0.60.4):
+    - React-Core (= 0.60.4)
+  - React-RCTNetwork (0.60.4):
+    - React-Core (= 0.60.4)
+  - React-RCTSettings (0.60.4):
+    - React-Core (= 0.60.4)
+  - React-RCTText (0.60.4):
+    - React-Core (= 0.60.4)
+  - React-RCTVibration (0.60.4):
+    - React-Core (= 0.60.4)
+  - React-RCTWebSocket (0.60.4):
+    - React-Core (= 0.60.4)
+    - React-fishhook (= 0.60.4)
   - RNGestureHandler (1.3.0):
     - React
-  - yoga (0.60.0.React)
+  - yoga (0.60.4.React)
 
 DEPENDENCIES:
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
@@ -97,6 +99,7 @@ DEPENDENCIES:
   - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - react-native-maps (from `../node_modules/react-native-maps`)
   - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
   - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
   - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
@@ -107,7 +110,7 @@ DEPENDENCIES:
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
-  - RNGestureHandler (from `/Users/pratamasetyaaji/Tutorial/react-native/rn_boilerplate/node_modules/react-native-gesture-handler`)
+  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
@@ -137,6 +140,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
   React-jsinspector:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  react-native-maps:
+    :path: "../node_modules/react-native-maps"
   React-RCTActionSheet:
     :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
   React-RCTAnimation:
@@ -158,7 +163,7 @@ EXTERNAL SOURCES:
   React-RCTWebSocket:
     :path: "../node_modules/react-native/Libraries/WebSocket"
   RNGestureHandler:
-    :path: "/Users/pratamasetyaaji/Tutorial/react-native/rn_boilerplate/node_modules/react-native-gesture-handler"
+    :path: "../node_modules/react-native-gesture-handler"
   yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -175,6 +180,7 @@ SPEC CHECKSUMS:
   React-jsi: 40f467ff088c811c6630acccb4aea57ea7ccb1b5
   React-jsiexecutor: e4b4717060a0cd8d0270323b5655a68c95432efd
   React-jsinspector: 044105eea064aec81adc5e4d777a8f6589e7d094
+  react-native-maps: bb480348a3fe1e5a811fed1ba3387b329161c5cc
   React-RCTActionSheet: 08864c609d9f959abf3d51fdd93f8bc6e91f21eb
   React-RCTAnimation: a4547e9fac2627ded3df9d302f5558b475faf819
   React-RCTBlob: 62d5c263a2adb8f7a2cafd601beba18a2d99cbbb
@@ -188,6 +194,6 @@ SPEC CHECKSUMS:
   RNGestureHandler: 7ccf2f3f60458e084f9ada01fbaf610f6fef073c
   yoga: 88c514f310aff89b94a14c5fbf44b95735af0cb7
 
-PODFILE CHECKSUM: f6deece69421b7c4f3f2471c21daa03ac9f8fda8
+PODFILE CHECKSUM: 1423b951c17cf556033dd6ab2689ff54dda40cd9
 
 COCOAPODS: 1.5.3
