@@ -4,24 +4,35 @@ import {
   REQUEST_SIGNIN_SUCCESS
 } from "../../redux/constans";
 
-const signIn = (state = [], action) => {
-  switch (action.key) {
+const initialState = {
+  onRequest: false,
+  onRequestSuccess: false,
+  onRequestFailed: false
+};
+
+const signIn = (state = initialState, action) => {
+  switch (action.type) {
     case REQUEST_SIGNIN:
       return {
-        ...state
+        ...initialState,
+        onRequest: true
       };
     case REQUEST_SIGNIN_FAILED:
       return {
-        ...state
+        ...state,
+        onRequest: false,
+        onRequestFailed: true,
+        onRequestSuccess: false
       };
     case REQUEST_SIGNIN_SUCCESS:
       return {
-        ...state
+        ...state,
+        onRequest: false,
+        onRequestFailed: false,
+        onRequestSuccess: true
       };
     default:
-      return {
-        ...state
-      };
+      return state;
   }
 };
 
